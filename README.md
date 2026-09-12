@@ -25,7 +25,7 @@ A full-stack music library application with a REST API backend and SQLite databa
 ```bash
 npm install
 node createTable.js   # sets up the database
-node server.js         # starts the server on localhost:5000
+node server.js        # starts the server on localhost:5000
 ```
 
 ## API Endpoints
@@ -38,4 +38,4 @@ node server.js         # starts the server on localhost:5000
 
 - Input validation and parameterized queries to prevent SQL injection
 - Basic authentication for write operations
-- A proper frontend UI beyond the current bare-bones HTML/CSS
+- A proper frontend UI beyond the current simple HTML/CSS
