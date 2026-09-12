@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+    <meta charset = "utf-8">
+    <title>Albums</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="artists.html">Artists</a>
+            <a href="albums.html">Albums</a>
+            <a href="songs.html">Songs</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Albums</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Release Year</th>
+                    <th>Plays</th>
+                    <th>Artist ID</th>
+                </tr>
+            </thead>
+            <tbody id="albumsTable"></tbody>
+        </table>
+
+        <form id="albumForm">
+            <h3><br>Insert a new album</h3>
+            <input type="text" id="albumName" placeholder="Name" required>
+            <input type="number" id="albumYear" placeholder="Release Year" required>
+            <input type="number" id="albumPlays" placeholder="Plays" required>
+            <input type="number" id="artistID" placeholder="Artist ID" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <form id="albumUpdateForm" style="display:none">
+            <h3><br>Update an album</h3>
+            <input type="hidden" id="updateAlbumID">
+            <input type="text" id="updateAlbumName" placeholder="Name" required>
+            <input type="number" id="updateAlbumYear" placeholder="Release Year" required>
+            <input type="number" id="updateAlbumPlays" placeholder="Plays" required>
+            <input type="number" id="updateArtistID" placeholder="Artist ID" required>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        Luke Tierney | 2026
+    </footer>
+
+    <script src="javascript/albumScript.js"></script>
+</body>
+
+</html>

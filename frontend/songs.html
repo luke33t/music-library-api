@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+    <meta charset = "utf-8">
+    <title>Songs</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>    
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="artists.html">Artists</a>
+            <a href="albums.html">Albums</a>
+            <a href="songs.html">Songs</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Songs</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Release Year</th>
+                    <th>Album ID</th>
+                </tr>
+            </thead>
+            <tbody id="songsTable"></tbody>
+        </table>
+
+        <form id="songForm">
+            <h3><br>Insert a new song</h3>
+            <input type="text" id="songName" placeholder="Name" required>
+            <input type="number" id="songYear" placeholder="Release Year" required>
+            <input type="number" id="albumID" placeholder="Album ID" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <form id="songUpdateForm" style="display:none">
+            <h3><br>Update a song</h3>
+            <input type="hidden" id="updateSongID">
+            <input type="text" id="updateSongName" placeholder="Name" required>
+            <input type="text" id="updateReleaseYear" placeholder="Release Year" required>
+            <input type="number" id="updateAlbumID" placeholder="Album ID" required>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        Luke Tierney | 2026
+    </footer>
+
+    <script src="javascript/songScript.js"></script>
+</body>
+
+</html>

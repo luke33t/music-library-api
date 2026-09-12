@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+    <meta charset = "utf-8">
+    <title>Artists</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="artists.html">Artists</a>
+            <a href="albums.html">Albums</a>
+            <a href="songs.html">Songs</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Artists</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Genre</th>
+                    <th>Monthly Listeners</th>
+                </tr>
+            </thead>
+            <tbody id="artistsTable"></tbody>
+        </table>
+
+        <form id="artistForm">
+            <h3><br>Insert a new artist</h3>
+            <input type="text" id="artistName" placeholder="Name" required>
+            <input type="text" id="artistGenre" placeholder="Genre" required>
+            <input type="number" id="artistMonthly" placeholder="Monthly Listeners" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <form id="artistUpdateForm" style="display:none">
+            <h3><br>Update a artist</h3>
+            <input type="hidden" id="updateArtistId">
+            <input type="text" id="updateArtistName" placeholder="Name" required>
+            <input type="text" id="updateArtistGenre" placeholder="Genre" required>
+            <input type="number" id="updateArtistMonthly" placeholder="Monthly Listeners" required>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        Luke Tierney | 2026
+    </footer>
+
+    <script src="javascript/artistScript.js"></script>
+</body>
+
+</html>
